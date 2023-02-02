@@ -30,67 +30,99 @@
 
     </LinearLayout>
 
-</androidx.cardview.widget.CardView>
-
     <!-- Card for weather -->
 
-<androidx.cardview.widget.CardView
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:id="@+id/weather_card"
-app:cardElevation="5dp"
-app:cardCornerRadius="5dp">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/weather_icon"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Location Name"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Current Weather"/>
-
-</LinearLayout>
-
-</androidx.cardview.widget.CardView>
-
-    <!-- Card for contact list -->
-<androidx.cardview.widget.CardView
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:id="@+id/contact_list_card"
-app:cardElevation="5dp"
-app:cardCornerRadius="5dp">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/contact_icon"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contacts"/>
-
-    <ListView
-        android:id="@+id/contact_list"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/weather_card"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="185dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="404dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/weather_icon"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location Name" />
+
+            <TextView
+                android:layout_width="191dp"
+                android:layout_height="136dp"
+                android:text="Current Weather" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+        <!-- Card for contact list -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/contact_list_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/contact_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contacts" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- Card for email card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/email_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/contact_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contacts" />
+
+                    <ListView
+                        android:id="@+id/contact_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
