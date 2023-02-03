@@ -147,7 +147,7 @@
             android:clickable="true"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:id="@+id/contacts_list_card"
+            android:id="@+id/contact_list_card"
             android:layout_margin="10dp">
 
             <LinearLayout

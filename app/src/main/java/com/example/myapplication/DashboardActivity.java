@@ -42,12 +42,12 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        emailCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent emailIntent = new Intent(DashboardActivity.this, EmailActivity.class);
-                startActivity(emailIntent);
-            }
-        });
+//        emailCard.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent emailIntent = new Intent(DashboardActivity.this, EmailActivity.class);
+//                startActivity(emailIntent);
+//            }
+//        });
     }
 }
